@@ -115,3 +115,4 @@ This project wouldn’t have been possible without the help of the following too
 - [Firebase](https://firebase.google.com/) – A platform for building web and mobile apps with real-time databases, authentication, and hosting.
 - [NPM](https://www.npmjs.com/) – The package manager for JavaScript, providing a vast ecosystem of tools and libraries.
 - [Chart.js](https://www.chartjs.org/) – A simple yet flexible JavaScript charting library.
+- [Gesture Recogition Documentation](https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer) - Mediapipe
