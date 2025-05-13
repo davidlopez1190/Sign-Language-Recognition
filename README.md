@@ -1,3 +1,7 @@
+- **Project Console:** [https://console.firebase.google.com/project/sign-language-web-app-e2b56/overview](https://console.firebase.google.com/project/sign-language-web-app-e2b56/overview)
+
+- **Hosting URL:** [https://sign-language-web-app-e2b56.web.app](https://sign-language-web-app-e2b56.web.app)
+
 # **Sign Language Recognition for Deaf and Dumb**
 
 ![Banner](./public/banner.png)
