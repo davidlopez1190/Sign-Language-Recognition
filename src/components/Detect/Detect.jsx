@@ -215,7 +215,7 @@ const Detect = () => {
       const recognizer = await GestureRecognizer.createFromOptions(vision, {
         baseOptions: {
           modelAssetPath:
-            process.env.REACT_APP_MODEL_URL,
+            import.meta.env.VITE_MODEL_URL,
         },
         numHands: 2,
         runningMode: runningMode,
