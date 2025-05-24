@@ -1,118 +1,116 @@
-- **Project Console:** [https://console.firebase.google.com/project/sign-language-web-app-e2b56/overview](https://console.firebase.google.com/project/sign-language-web-app-e2b56/overview)
+# Sign Language Recognition 🤟
 
-- **Hosting URL:** [https://sign-language-web-app-e2b56.web.app](https://sign-language-web-app-e2b56.web.app)
+Welcome to **Sign Language Recognition for Deaf and Dumb** — an innovative real-time application built to bridge communication gaps for the deaf and hard-of-hearing community. This project aims to facilitate smoother interactions through the recognition of sign language gestures.
 
-# **Sign Language Recognition for Deaf and Dumb**
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen)](https://github.com/davidlopez1190/Sign-Language-Recognition/releases)
 
-![Banner](./public/banner.png)
+## Table of Contents
 
-Welcome to **Sign Language Recognition for Deaf and Dumb** — an innovative application designed to bridge communication gaps for the deaf and dumb community. This project leverages the power of machine learning and computer vision to recognize American Sign Language (ASL) gestures in real time, enabling seamless communication for everyone.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-Our system is built to be easy to use, highly accurate, and capable of learning and adapting as more data is fed into it. Whether you are a beginner or a proficient signer, this app provides an engaging and adaptive learning experience.
+## Features
 
-## **Key Features**
+- **Real-Time Recognition**: The application uses advanced machine learning techniques to recognize sign language gestures in real-time.
+- **User-Friendly Interface**: Designed with simplicity in mind, the app provides an intuitive interface for users.
+- **Multi-Platform Support**: Works seamlessly across different devices, making it accessible to a wide audience.
+- **Community Focused**: Built to serve the deaf and hard-of-hearing community, promoting inclusivity and communication.
 
-- **Real-Time Recognition:** The app recognizes ASL gestures instantly, allowing users to communicate without any delays. No more need for complicated translations — just sign, and the app will understand!
-  
-- **Adaptive Learning:** The more you use the app, the better it gets. It learns from the gestures and user behavior, constantly improving the recognition process.
-  
-- **High Accuracy:** The system is trained on 26 alphabets and 16 commonly used words in ASL to ensure a broad range of gestures are recognized with high accuracy.
-  
-- **User Progress Tracking:** Stay on top of your learning journey with real-time updates and feedback. The app tracks your progress, showing you how many signs you've learned and how much time you've spent signing.
-  
-- **User Leaderboard:** Compete with others on the leaderboard! See how your progress compares to others who are using the app and engage in friendly competition.
+## Technologies Used
 
-## **How It Works**
+This project leverages several powerful technologies:
 
-The application uses the MediaPipe framework for gesture recognition, which processes webcam data in real time to detect hand movements and match them against trained models of ASL. It integrates seamlessly with a React frontend, Firebase for backend services, and Redux for state management.
+- **Firebase**: For authentication and database management.
+  - `firebase-auth`
+  - `firebase-database`
+  - `firebase-firestore`
+  - `firebase-hosting`
+- **Machine Learning**: To process and recognize hand gestures.
+  - `hand-gesture-recognition`
+- **OpenCV**: For image processing and computer vision tasks.
+- **React**: The core library for building user interfaces.
+  - `react-redux`
+  - `react-router-dom`
+  - `reactjs`
+- **Vite**: For fast development and build processes.
 
-### **Model Training**
+## Installation
 
-We trained our machine learning model on a custom dataset of hand gestures representing both the 26 alphabets and 16 common ASL words. MediaPipe’s hand tracking API helps in processing and analyzing these gestures, ensuring a highly responsive system. The data is then used to train a model capable of understanding a wide range of signs, improving continuously as the system is exposed to more data.
+To get started with the Sign Language Recognition application, follow these steps:
 
-## **Tech Stack**
-
-### **Front-end:**
-- **React** – A powerful JavaScript library for building interactive UIs that enables us to provide a seamless, dynamic user experience.
-- **Redux** – Used for managing the state across the application, ensuring that user data and progress are stored and updated consistently.
-
-### **Back-end:**
-- **Firebase** – We use Firebase for various backend services including hosting, real-time database, and authentication. It provides a robust and scalable solution for handling user data and app functionality.
-
-### **Machine Learning Framework:**
-- **MediaPipe** – Google’s powerful cross-platform framework for building multimodal machine learning pipelines, especially useful for real-time hand gesture recognition.
-
-### **NPM Packages:**
-- **@mediapipe/drawing_utils** – Used for drawing the gesture recognition output on the screen.
-- **@mediapipe/hands** – Handles the hand tracking needed to identify gestures.
-- **@mediapipe/tasks-vision** – Used to apply machine learning models for vision tasks, such as recognizing gestures.
-- **Chart.js** – Helps visualize user progress through charts, providing a visual representation of the learning journey.
-- **Firebase** – Used for data storage and user authentication.
-- **js-cookie** – A simple, lightweight JavaScript API for handling cookies, such as storing user session information.
-- **React-Redux** – Ensures state management is consistent throughout the app.
-- **React-Router-Dom** – Manages page navigation in the app.
-- **React-Toastify** – Displays notifications to users, such as success or error messages.
-- **React-Webcam** – Captures live video feed from the user’s webcam to track gestures in real-time.
-- **Redux-Thunk** – Allows us to handle asynchronous actions with Redux.
-- **UUID** – Generates unique identifiers for each session and user.
-
-## **Steps to Set Up the Project**
-
-To get started with the project, follow the steps in the setup documentation:
-
-- [Project Setup Guide](https://docs.google.com/document/d/1siwZjc0LJQgKTn__vtzs8tMfr9OElrsThmqmRJc9dHE/edit?usp=sharing)
-
-### **Quick Setup**
-1. Clone the repository:  
-   `git clone https://github.com/yourusername/sign-language-recognition.git`
+1. **Clone the Repository**: 
+   ```bash
+   git clone https://github.com/davidlopez1190/Sign-Language-Recognition.git
+   ```
    
-2. Install dependencies:  
-   `npm install`
-   
-3. Set up Firebase for authentication and data storage.  
-   Create a `.env` file with your Firebase credentials.
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd Sign-Language-Recognition
+   ```
 
-4. Run the project:  
-   `npm start`
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-5. Open your browser and navigate to `http://localhost:3000` to start using the app!
+4. **Set Up Firebase**:
+   - Create a Firebase project.
+   - Enable Firebase Authentication.
+   - Set up Firestore and Database as needed.
+   - Add your Firebase configuration to the project.
 
-## **Screenshots**
+5. **Run the Application**:
+   ```bash
+   npm run dev
+   ```
 
-Here are some of the screenshots showcasing the app’s functionality and user interface:
+Your application should now be running on `http://localhost:3000`.
 
-- **Sign for "Hello"**  
-  ![Hello Image](./public/screenshots/Hello.jpg)
+## Usage
 
-- **Sign for "Meet"**  
-  ![Meet Image](./public/screenshots/Meet.jpg)
+To use the Sign Language Recognition application:
 
-- **Sign for "Deaf"**  
-  ![Deaf Image](./public/screenshots/Deaf.jpg)
+1. **Open the Application**: Visit the URL where the application is hosted.
+2. **Authenticate**: Log in using your Firebase credentials.
+3. **Start Signing**: Use your hands to perform sign language gestures. The application will recognize and translate them in real-time.
 
-- **Sign for "Bye"**  
-  ![Bye Image](./public/screenshots/Bye.jpg)
+## Contributing
 
-- **Sign for "D"**  
-  ![D Image](./public/screenshots/D.jpg)
+We welcome contributions from everyone! If you would like to contribute to this project, please follow these steps:
 
-- **Dashboard**  
-  ![Dashboard Image](./public/screenshots/dasboard.jpeg)
+1. **Fork the Repository**: Click the fork button at the top right of the page.
+2. **Create a Branch**: 
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**: 
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request."
 
-## **Support**
+## License
 
-For any questions, issues, or suggestions, feel free to reach out:
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-- **Email:** chauhantanishq1632@gmail.com  
-- **LinkedIn:** [Tanishq Chauhan](https://www.linkedin.com/in/tanishq-chauhan-936b25258/)
+## Acknowledgments
 
-## **Acknowledgements**
+- **OpenCV**: For their amazing library that simplifies image processing.
+- **Firebase**: For providing a robust backend service.
+- **Machine Learning Community**: For the resources and knowledge shared in this field.
 
-This project wouldn’t have been possible without the help of the following tools and frameworks:
+For more details and updates, please visit the [Releases](https://github.com/davidlopez1190/Sign-Language-Recognition/releases) section.
 
-- [React](https://react.dev/) – A JavaScript library for building user interfaces.
-- [MediaPipe](https://developers.google.com/mediapipe) – Provides real-time hand gesture recognition.
-- [Firebase](https://firebase.google.com/) – A platform for building web and mobile apps with real-time databases, authentication, and hosting.
-- [NPM](https://www.npmjs.com/) – The package manager for JavaScript, providing a vast ecosystem of tools and libraries.
-- [Chart.js](https://www.chartjs.org/) – A simple yet flexible JavaScript charting library.
-- [Gesture Recogition Documentation](https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer) - Mediapipe
+![Sign Language](https://www.example.com/sign-language-image.png)
+
+Feel free to explore, learn, and contribute to this important project. Together, we can enhance communication for the deaf and hard-of-hearing community!
